@@ -5,7 +5,6 @@ pipeline {
     steps { 
       echo "damn train automation is running"
       sh './gradlew build --no-daemon'
-      archiveArtifacts artifacts: 'dist/train_archive.zip'
       }
     }
   }
